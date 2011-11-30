@@ -1,0 +1,3 @@
+DESCRIPTION="WordPerfect document library"
+HOMEPAGE="http://libwpd.sourceforge.net/"
+SRC_URI="mirror://sourceforge/libwpd/${P}.tar.xz"
