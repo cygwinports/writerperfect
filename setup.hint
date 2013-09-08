@@ -1,4 +1,0 @@
-category: Graphics Publishing
-requires: libgcc1 libstdc++6 libvisio0.0_0 libwpd0.9_9 libwpg0.2_2 libwps0.2_2
-sdesc: "Converts WordPerfect and MS Visio files to OpenDocument format"
-ldesc: "Converts WordPerfect and MS Visio files to OpenDocument format"
