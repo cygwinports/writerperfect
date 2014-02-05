@@ -1,9 +1,13 @@
 NAME="writerperfect"
-VERSION=0.8.2
+VERSION=0.8.3
 RELEASE=1
 CATEGORY="Graphics Office"
-SUMMARY="Converts proprietary office file formats to OpenDocument"
-DESCRIPTION="Converts Corel and Microsoft office suite files to OpenDocument
+SUMMARY="Office file format converters"
+DESCRIPTION="Converts multiple office suite file formats to OpenDocument
 format."
 HOMEPAGE="http://libwpd.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libwpd/${NAME}-${VERSION}.tar.xz"
+
+# pull in the converters shipped with each of the libraries
+REQUIRES="libabw-bin libcdr-bin libetonyek-bin libfreehand-bin libmspub-bin"
+REQUIRES+=" libmwaw-bin libvisio-bion libwpd-bin libwpg-bin libwps-bin"
