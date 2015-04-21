@@ -1,5 +1,5 @@
 NAME="writerperfect"
-VERSION=0.8.3
+VERSION=0.9.2
 RELEASE=1
 CATEGORY="Graphics Office"
 SUMMARY="Office file format converters"
@@ -9,5 +9,23 @@ HOMEPAGE="http://libwpd.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libwpd/${NAME}-${VERSION}.tar.xz"
 
 # pull in the converters shipped with each of the libraries
-REQUIRES="libabw-bin libcdr-bin libetonyek-bin libfreehand-bin libmspub-bin"
-REQUIRES+=" libmwaw-bin libvisio-bion libwpd-bin libwpg-bin libwps-bin"
+REQUIRES="libabw-tools libcdr-tools libe-book-tools libetonyek-tools \
+ libfreehand-tools libmspub-tools libmwaw-tools libpagemaker-tools \
+ libvisio-tools libwpd-tools libwpg-tools libwps-tools"
+
+CYGCONF_ARGS="
+	--with-libabw
+	--with-libcdr
+	--with-libe-book
+	--with-libepubgen
+	--with-libetonyek
+	--with-libfreehand
+	--with-libgsf
+	--with-libmspub
+	--with-libmwaw
+	--with-libpagemaker
+	--with-libvisio
+	--with-libwpd
+	--with-libwpg
+	--with-libwps
+"
