@@ -1,6 +1,6 @@
 NAME="writerperfect"
 VERSION=0.9.2
-RELEASE=2
+RELEASE=3
 CATEGORY="Graphics Office"
 SUMMARY="Office file format converters"
 DESCRIPTION="Converts multiple office suite file formats to OpenDocument
