@@ -1,5 +1,5 @@
 NAME="writerperfect"
-VERSION=0.9.5
+VERSION=0.9.6
 RELEASE=1
 CATEGORY="Graphics Office"
 SUMMARY="Office file format converters"
@@ -8,14 +8,15 @@ format."
 HOMEPAGE="http://libwpd.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libwpd/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/rpms/writerperfect.git/plain/0001-update-help-output-for-fh2epub-too.patch
-	0.9.5-enable-libeot.patch
+	http://pkgs.fedoraproject.org/cgit/rpms/writerperfect.git/plain/0001-fix-build-with-libgsf.patch
+	0.9.6-as-needed.patch
 "
 
 # pull in the converters shipped with each of the libraries
 REQUIRES="libabw-tools libcdr-tools libe-book-tools libetonyek-tools \
  libfreehand-tools libmspub-tools libmwaw-tools libpagemaker-tools \
- libstaroffice-tools libvisio-tools libwpd-tools libwpg-tools libwps-tools"
+ libqxp-tools libstaroffice-tools libvisio-tools libwpd-tools libwpg-tools \
+ libwps-tools libzmf-tools"
 
 CYGCONF_ARGS="
 	--with-sharedptr=c++11
