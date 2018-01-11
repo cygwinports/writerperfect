@@ -3,8 +3,8 @@ VERSION=0.9.6
 RELEASE=1
 CATEGORY="Graphics Office"
 SUMMARY="Office file format converters"
-DESCRIPTION="Converts multiple office suite file formats to OpenDocument
-format."
+DESCRIPTION="writerperfect is a set of command line tools for export of
+various file formats to ODF, AbiWord, or EPUB."
 HOMEPAGE="http://libwpd.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libwpd/${NAME}-${VERSION}.tar.xz"
 PATCH_URI="
